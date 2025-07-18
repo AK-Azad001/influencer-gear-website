@@ -1,0 +1,108 @@
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+body{
+    max-width: 1440px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.image{
+    width: 36px;
+    height: 30px;
+}
+.btn-primary{
+    border: none;
+    border-radius: 41px;
+    padding: 10px 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+
+}
+/* header styles */
+.header{
+    max-width: 1200px;
+    margin-top: 25px;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-title{
+    font-size: 1.5 rem;
+    font-weight: 700;
+    color: #3a3a3a;
+
+    
+}
+
+.links {
+    gap: 20px;
+    padding: 0;
+}
+.links li {
+    list-style: none;
+    
+
+}
+.links a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+/* banner section styles */
+.banner{
+    justify-content: space-between;
+}
+
+
+.banner-cont-title{
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #3a3a3a;  
+}
+.banner-cont-subtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+
+.banner-img-sec{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+/* responsibe layout style */
+@media screen and (max-width:576px) {
+
+     nav{
+        flex-direction: column;
+     }
+     .links{
+        gap: 15px;
+     }
+     nav ul{
+        flex-direction:row ;
+        
+     }
+     .banner{
+        margin-top: ;
+        flex-direction: column;
+        /* text-align: center; */
+        
+     }
+     .banner-content{
+        padding:10px 20px ;
+     }
+}
