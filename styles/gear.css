@@ -85,9 +85,10 @@ nav{
 .logo{
     max-width: 1110px;
     margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 100px;
+    align-items: center;
+    display: grid;
+    grid-template-columns:repeat(7,1fr) ;
 }
 /* popular collection section styles */
 .collection-section{
@@ -224,18 +225,26 @@ nav{
         padding:10px 20px ;
      }
      .logo{
-        flex-direction: column;
-        margin: 0px;
-        gap: 20px;
+        width:fit-content;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        
      }
      .collection-section{
         margin: 0px auto;
-        margin-left: 30px;
+    
+        
+     }
+     .collection-section h3{
+        text-align: left;
+        margin-left: 40px;
      }
      .products{
     display: grid;
     grid-template-columns:1fr;
     gap: 30px;
+    margin-left: 30px;
+    
 }
 .see-more{
     max-width: 350px;
